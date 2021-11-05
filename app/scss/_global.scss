@@ -1,0 +1,148 @@
+html,
+body {
+  height: 100vh;
+  transition: all 0.5s;
+}
+
+body {
+  background-color: $bg;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 169%;
+  letter-spacing: 0.105em;
+  font-feature-settings: "case" on;
+}
+
+nav,
+a {
+  z-index: 9999;
+}
+.wrapper {
+  position: absolute;
+  width: 100%;
+  min-height: 100%;
+}
+
+.main {
+  flex: 1 0 auto;
+  position: absolute;
+  top: -100px;
+  height: 120vh;
+}
+.footer {
+  flex: 0 0 auto;
+}
+
+.container {
+  max-width: 1630px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.header {
+  z-index: 9999px;
+}
+.main__decor-one {
+  z-index: -1;
+}
+h1 {
+  font-size: 120px;
+  font-weight: 900;
+  line-height: 108.5%;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+h2 {
+  font-size: 46px;
+  font-weight: 100;
+}
+h3 {
+  transform: rotate(-90deg);
+  width: 0;
+  height: 0;
+  font-size: 70px;
+  line-height: 108.5%;
+  letter-spacing: 0.33em;
+  text-transform: uppercase;
+  margin-top: 800px;
+  margin-right: 50px;
+  display: inline-block;
+}
+h4 {
+  font-weight: 600;
+  font-size: 100px;
+  line-height: 108.5%;
+  text-align: center;
+  text-transform: uppercase;
+}
+.theams {
+  z-index: 999;
+}
+.light-img {
+  display: none;
+}
+.label-light {
+  display: none;
+}
+.logo-light {
+  display: none;
+}
+.header__top {
+  position: relative;
+}
+.card-price {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.sh-box {
+  box-shadow: -2px 4px 16px 8px rgba(255, 255, 255, 0.15);
+  &:hover {
+    box-shadow: -2px 4px 16px 4px rgba(255, 255, 255, 0.15);
+  }
+}
+.dev-btn {
+  padding: 16px 66px;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.15);
+  transition: all 0.5s;
+  &:hover {
+    background-color: $red;
+    border: none;
+  }
+  .red_button:hover {
+    color: #fff;
+  }
+}
+.services__slider-info .visible{
+  display: block;
+}
+.services__slider-info-item-design,
+.services__slider-info-item-layout,
+.services__slider-info-item-wp{
+  display: none;
+}
+.main__decor-two{
+  z-index: -1;
+}
+.social-box{
+  margin-top: 50px;
+  ul{
+    margin-top: 40px;
+    display: flex;
+    li{
+      margin-right:40px;
+    }
+  } 
+}
+
+#scroll-1::-webkit-scrollbar{
+width: 20px;
+background-color: #fff;
+}
+
+
+#scroll-1::-webkit-scrollbar-thumb{
+  background-color: $red;
+}
