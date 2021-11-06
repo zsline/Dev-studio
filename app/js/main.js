@@ -9,12 +9,18 @@ $(function () {
   slider
     .slick({
       dots: true,
+      arrows: false,
       infinite: true,
       fade: true,
       cssEase: 'linear',
-      dotsClass: 'dev-dots'
+      dotsClass: 'dev-dots',
+      responsive: [
+        {
+          breakpoint: 900,
+          settings: "unslick"
+        }
+      ]
     });
-
 
 
   slider.on('wheel', (function (e) {
@@ -34,8 +40,8 @@ $(function () {
       $(this).slick('slickPrev');
     }
   }));
-  
 })
+
 
 
 
