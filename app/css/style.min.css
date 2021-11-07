@@ -112,7 +112,8 @@ h1 {
 
 h2 {
   font-size: 46px;
-  font-weight: 100; }
+  font-weight: 100;
+  line-height: 108.5%; }
 
 h3 {
   -webkit-transform: rotate(-90deg);
@@ -147,12 +148,18 @@ h4 {
 .logo-light {
   display: none; }
 
+.logo, .logo-light {
+  z-index: 9999 !important; }
+
 .header__top {
   position: relative; }
 
 .card-price {
   font-size: 30px;
   font-weight: 600; }
+
+.main__decor-one {
+  z-index: -1; }
 
 .sh-box {
   -webkit-box-shadow: -2px 4px 16px 8px rgba(255, 255, 255, 0.15);
@@ -883,4 +890,41 @@ body {
     right: 0; }
   .services__left a {
     margin-left: 69px;
-    margin-top: 38px; } }
+    margin-top: 38px; }
+  .contacts__form {
+    display: block;
+    width: 600px; }
+    .contacts__form button {
+      width: 80%; }
+  .contacts__box {
+    margin-top: 0; }
+  h2 {
+    font-size: 30px; }
+  .clients-inner {
+    padding: 30px 12px; }
+    .clients-inner span::after {
+      bottom: 10px; } }
+
+@media (max-width: 900px) {
+  body {
+    overflow: scroll; } }
+
+@media (max-width: 440px) {
+  .logo img {
+    width: 80px;
+    height: 15px; }
+  .logo-light {
+    width: 80px;
+    height: 15px; }
+  .main__decor-one {
+    display: none; }
+  .main__decor-three {
+    display: none; }
+  .main__inner {
+    margin-top: 50px; }
+    .main__inner h1 {
+      font-size: 40px; }
+  .main__slider {
+    margin-top: 100px; }
+  .header__action {
+    font-size: 0; } }

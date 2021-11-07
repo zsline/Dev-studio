@@ -75,49 +75,102 @@
   .benefits-three-col__item {
     min-width: 220px;
     height: 366px;
-    p{
+    p {
       font-size: 12px;
     }
   }
   .dev-btn {
     padding: 16px 5px;
   }
-  .card-price p{
+  .card-price p {
     font-size: 20px;
   }
   .benefits-three-col__item svg {
     width: 80px;
-}
+  }
   body.light .benefits-three-col__item svg {
     width: 80px;
-}
-.services__slider-nav{
-  margin-left: 50px;
-}
-.services__slider-nav .slick-track{
-  transform: translateY(100px)!important;
-  transform: translateX(100px)!important;
-}
-.services__left{
-  align-items: start;
-}
-.img-box{
-  max-width: 70%;
-  height: auto;
-}
-.services__slider-info{
-  p{
-  width: 480px;
-}
-h4{
-  transform: translateY(0);
-  left: 0;
-  right: 0;
-}
-} 
-.services__left a {
+  }
+  .services__slider-nav {
+    margin-left: 50px;
+  }
+  .services__slider-nav .slick-track {
+    transform: translateY(100px) !important;
+    transform: translateX(100px) !important;
+  }
+  .services__left {
+    align-items: start;
+  }
+  .img-box {
+    max-width: 70%;
+    height: auto;
+  }
+  .services__slider-info {
+    p {
+      width: 480px;
+    }
+    h4 {
+      transform: translateY(0);
+      left: 0;
+      right: 0;
+    }
+  }
+  .services__left a {
     margin-left: 69px;
     margin-top: 38px;
+  }
+  .contacts__form {
+    display: block;
+    width: 600px;
+    button {
+      width: 80%;
+    }
+  }
+  .contacts__box {
+    margin-top: 0;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  .clients-inner {
+    padding: 30px 12px;
+    span::after {
+      bottom: 10px;
+    }
+  }
 }
+
+@media (max-width: 900px){
+  body{
+    overflow:scroll;
+  }
+}
+@media (max-width: 440px) {
+  .logo img {
+    width: 80px;
+    height: 15px;
+  }
+ .logo-light {
+    width: 80px;
+    height: 15px;
+  }
+  .main__decor-one {
+    display: none;
+  }
+  .main__decor-three{
+    display: none;
+  }
+  .main__inner{
+    margin-top: 50px;
+    h1{
+      font-size: 40px;
+    }
+  }
+  .main__slider{
+    margin-top: 100px;
+  }
+  .header__action{
+    font-size: 0;
+  }
 
 }
